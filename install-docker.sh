@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install dependencies
-sudo apt-get install curl
+sudo apt-get install curl acl
 
 # stop any running containers
 if curl -s --unix-socket /var/run/docker.sock http/_ping 2>&1 >/dev/null
